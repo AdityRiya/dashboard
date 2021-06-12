@@ -1,0 +1,188 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-color: rgb(243, 243, 243);
+  }
+.color{
+    
+    background-image: linear-gradient(rgb(0, 73, 151),rgb(20, 150, 150), rgb(18, 35, 130)) !important;
+  
+}  
+.color ul li a{
+    color: rgb(225, 225, 225);
+    transition: 0.5s;
+}
+.color ul li a:hover{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    
+}
+.color p{
+    color: azure;
+}
+
+
+.button{
+    padding: 0;
+    padding: 5px 12px;
+    background:white;
+    color: gray;
+    font-size: 14px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.button:hover{
+    background:black;
+    color: azure;
+}
+.order_bg_color{
+    background-image: linear-gradient(120deg, rgb(218, 40, 0), rgb(230, 142, 110) 70%, rgb(242, 106, 81) 0);
+}
+.proccessing_bg_color{
+    background-image: linear-gradient(120deg, rgb(0, 132, 255), rgb(110, 188, 230) 70%, rgb(81, 145, 242) 0);
+
+}
+.complete_bg_color{
+    background-image: linear-gradient(120deg, rgb(50, 155, 118), rgb(110, 230, 178) 70%, rgb(17, 199, 120) 0);
+}
+.product_bg_color{
+    background-image: linear-gradient(120deg, rgb(21, 95, 174), rgb(130, 181, 230) 70%, rgb(59, 109, 162) 0);
+}
+.customer_bg_color{
+    background-image: linear-gradient(120deg, rgb(218, 15, 42), rgb(230, 130, 173) 70%, rgb(240, 21, 123) 0);
+}
+.post_bg_color{
+    background-image: linear-gradient(120deg, rgb(0, 181, 15), rgb(77, 220, 89) 70%, rgb(32, 179, 49) 0);
+}
+.order{
+    min-height: 100px;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.order:hover{
+    margin-top: 10px !important;
+}
+.circle{
+    padding: 80px 0px;
+}
+.circle span{
+    
+    padding: 50px;
+   
+}
+.shadow{
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(196, 196, 196);
+}
+.New_customers{
+    border: 15px solid;
+   border-radius:50% ;
+    border-color: rgb(255, 217, 0);
+}
+.total_customers{
+    border: 15px solid;
+    border-radius:50% ;
+     border-color: rgb(0, 208, 255);
+}
+.total_sales{
+    border: 15px solid;
+    border-radius:50% ;
+     border-color: rgb(4, 0, 255);
+}
+.total_all_sales{
+    border: 15px solid;
+    border-radius:50% ;
+     border-color: rgb(1, 165, 6);
+}
+
+
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(rgb(0, 35, 151),rgb(0,130,250));
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+  }
+  .navbar-brand{
+    font-size: 20px !important;
+
+
+  }
+  .navbar-brand:hover{
+      border: none !important;
+      background: transparent !important;
+      
+      
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #d3d3d3;
+    display: block;
+    transition: 0.5s;
+  }
+  
+  .sidebar a:hover {
+      border-left: 2px solid rgb(162, 179, 255);
+      border-bottom: 3px solid rgb(184, 179, 255);
+      background: rgb(98, 98, 255);
+    color: rgb(247, 251, 255);
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+
+  }
+  .sidebar .closebtn:hover{
+      border: none;
+      background:transparent;
+      color: white;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+   background-image: linear-gradient(rgb(9, 28, 102), rgb(50,100,150),blue);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;}
+.date{
+        
+        float: right;
+    }
+.date form{
+    float: right;
+    padding:10px 15px;
+
+}
+.date form input{
+    padding: 5px 10px;
+
+}
+  /* main nav */
+ 
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
