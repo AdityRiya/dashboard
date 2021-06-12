@@ -1,0 +1,33 @@
+.First-div .purple_color{
+    color: purple;
+    font-weight: 600;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+.item_table{
+    background-image: linear-gradient(to right,rgba(95, 1, 90, 0.822),rgb(216, 25, 184));
+   
+}
+.billed{
+    background-color: rgb(231, 231, 231);
+    
+}
+.bank tr td{
+    border: none;
+    font-size: 13px;
+}
+.bank tr td:first-child{
+    color: gray;
+    font-weight: 600;
+}
+.headingcolor{
+    color: rgb(161, 0, 201);
+}
+.total td{
+    border: none;
+}
+.border_top{
+    border-top: 1px solid rgb(211, 211, 211);
+}
