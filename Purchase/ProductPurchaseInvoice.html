@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/dashboard/">
+
+   
+
+	
+
+		<!-- Main Css -->
+
+		<!-- stylesheet -->
+		
+		<link href="../Dashboard/style.css" rel="stylesheet">
+		<link href="../Dashboard/custom.css" rel="stylesheet">
+		<link href="../Dashboard/responsive.css" rel="stylesheet">
+		<link href="../Dashboard/common.css" rel="stylesheet">
+        <link rel="stylesheet" href="../invoice.css">
+
+		
+		
+
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> ×</a>
+    <a class="navbar-brand font-weight-bold text-light " href="../index.html">NavieaSoft</a>
+  
+      
+       
+
+      
+        <a class="nav-link" href="PurchaseEntry.html">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          Purchase Entry
+        </a>
+       
+      
+        <a class="nav-link" href="SupplierEntry.html">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          Supplier Entry
+        </a>
+        <a class="nav-link" href="PurchaseReturnEntry.html">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Purchase Return Entry
+          </a>
+          
+          <a class="nav-link" href="ProductPurchaseInvoice.html">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Product Purchase Invoice
+          </a>
+          
+          <a class="nav-link" href="PurchaseReturnList.html">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Purchase Return List
+          </a>
+          <a class="nav-link" href="SupplierDueReport.html">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Supplier Due Report
+          </a>
+          
+          <a class="nav-link" href="SuppilerList.html">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Supplier List
+          </a>
+          <a class="nav-link" href="SupplierLedger.html">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Supplier Ledger
+          </a>
+          <a class="nav-link" href="SupplierTransactionHistory.html">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Supplier Transaction History
+          </a>
+          
+      
+        
+        
+        
+      
+        
+      
+        <a class="nav-link" href="#">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          User
+        </a>
+      
+  </div>
+  
+  
+  <div id="main">
+    <nav class="navbar navbar-expand-md   main-nav color" >
+        <button class="openbtn" onclick="openNav()">☰ </button>  
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav pl-4 mr-auto text-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                Dashboard <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                Administration</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sales.html"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                  Sales </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Purchase.html"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                  Purchase </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                  Manufacturing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                  Inventory </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                  Curiier</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                  E-commerce </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                  Report</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                  Setting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                  Social setting</a>
+              </li>
+           
+          </ul>
+          <div class="user">
+              <div class="row"><div class="col-sm-7">
+                <p><b>User Name:</b> Aaaaaaaa</p>
+              </div>
+              <div class="col-sm-5">
+                <img src="https://geniuscart.royalscripts.com/assets/images/admins/1556780563user.png" alt="">
+              </div>
+
+              </div>
+              
+
+           
+          </div>
+          
+        </div>
+      </nav>
+
+
+      <div class="content-area">
+        <div class="container-fluid">
+            <div class="row row-card-one">
+                <div class="col-sm-12 ">
+                    <div class="row report-title  my-2">
+                        <h4 class="my-2 mx-auto "><em> <b>Purchase Invoice</b> </em></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="row row-card-one">
+                <div class="col-sm-12">
+                <form>
+                    <div class="form-row">
+                      <div class="col-sm-3">
+                        <label for="">Choose Purchase Invoice:</label> 
+                        <select class="form-control form-control-sm">
+                            <option>S-2021-18 </option>
+                            <option>S-2021-17 </option>
+                            <option>S-2021-16</option>
+                            <option>S-2021-15</option>
+                            <option>S-2021-14</option>
+                            <option>S-2021-13</option>
+                            
+                          </select>
+                      </div>
+                      
+                      <div class="offset-sm-7 col-sm-2">
+                        <button  type="submit" class="btn btn-primary btn-block mt-4">Search Invoice</button>
+                        
+                      </div>
+                    </div>
+                  </form>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="row row-card-one">
+                <div class="col-sm-12">
+                    
+
+                   
+                              <!--=========================================
+                                  First Div 
+              ==============================================-->
+                  
+              <div class="container-fluid p-4 First-div">
+                  <div class="row">
+                      <div class="col-sm-12">
+                      <h1 class="purple_color">Invoice</h1>
+                      </div>
+                      <div class="col-sm-8 col-md-9">
+                          <table class=" w-50">
+                              <tr>
+                                  <td class="text-secondary">Invoice#</td>
+                                  <td class="font-weight-bold">004</td>
+                              </tr>
+                              <tr>
+                                  <td class="text-secondary">Invoice Date</td>
+                                  <td class="font-weight-bold">JUN 19,201</td>
+                              </tr>
+                              <tr>
+                                  <td class="text-secondary">Due Date</td>
+                                  <td class="font-weight-bold">JUN 28,2019 </td>
+                              </tr>
+              
+                          </table>
+              
+                      </div>
+                      <div class="col-sm-4 col-md-3">
+                          <img src="1-01.png" alt="" class="logo">
+                      </div>
+                  </div>
+              </div>
+              
+              <!--=========================================
+                                  First Div END
+              ==============================================-->
+              
+              
+              <!--=========================================
+                                  Second Div
+              ==============================================-->
+              <div class="container-fluid p-4 second_div">
+                  <div class="row">
+                      <div class="col-sm-6">
+                          <div class="billed p-3">
+                              <h4 class="headingcolor">Billed by</h4>
+                              <p>
+                                  <b>Foobar Labs</b> <br>
+                                  46 ,Chattogram ,Bangladesh 
+                              </p>
+                              <table>
+                                  <tr>
+                                      <td class="pr-2"> <b> GSTIN</b></td>
+                                      <td>782CNDNCJVNFJV</td>
+                                  </tr>
+                                  <tr>
+                                      <td class=" pr-2"><b>PAN</b></td>
+                                      <td>ASSSDSDSDD</td>
+                                  </tr>
+                              </table>
+                          </div>
+                          <div class="text-center">
+                              <p>
+                                  Place to Supply 
+                                  <span class=" pl-4 font-weight-bold">Chattogram</span>
+                              </p>
+                          </div>
+                      </div>
+                      <div class="col-sm-6">
+                          <div class="billed p-3">
+                              <h4  class="headingcolor">Billed to</h4>
+                              <p>
+                                  <b>Wix Studio</b> <br>
+                                  46 ,Chattogram ,Bangladesh 
+                              </p>
+                              <table>
+                                  <tr>
+                                      <td class="pr-2"> <b> GSTIN</b></td>
+                                      <td>782CNDNCJVNFJV</td>
+                                  </tr>
+                                  <tr>
+                                      <td class=" pr-2"><b>PAN</b></td>
+                                      <td>ASSSDSDSDD</td>
+                                  </tr>
+                              </table>
+                          </div>
+                          <div class="text-center">
+                              <p>
+                                  Country to Supply 
+                                  <span class=" pl-4 font-weight-bold">Bangladesh</span>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              
+              
+              </div>
+              
+              <!--=========================================
+                                  Second Div End
+              ==============================================-->
+              
+              
+              
+              <!--=========================================
+                                  item table start
+              ==============================================-->
+              <div class="container-fluid px-4">
+                  <div class="row  p-4">
+                      <table class="table table-responsive-sm ">
+                          <thead class="text-light item_table">
+                              <tr>
+                                  <th>Items #/Item Description</th>
+                                  <th>HSN</th>
+                                  <th>Qty.</th>
+                                  <th>GST</th>
+                                  <th>Taxable Amount</th>
+                                  <th>SGST</th>
+                                  <th>CGST</th>
+                                  <th>Amount</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>1. Basic Web Development</td>
+                                  <td> 
+                                      02
+                                  </td>
+                                  <td>10</td>
+                                  <td>9%</td>
+                                  <td>$10,000.00</td>
+                                  <td>$900</td>
+                                  <td>$900</td>
+                                  <td>$11,800.00</td>
+                              </tr>
+                              <tr>
+                                  <td>2. Logo Design</td>
+                                  <td> 
+                                      02
+                                  </td>
+                                  <td>10</td>
+                                  <td>9%</td>
+                                  <td>$10,000.00</td>
+                                  <td>$900</td>
+                                  <td>$900</td>
+                                  <td>$11,800.00</td>
+                              </tr>
+                              <tr>
+                                  <td>3. Web Design</td>
+                                  <td> 
+                                      02
+                                  </td>
+                                  <td>10</td>
+                                  <td>9%</td>
+                                  <td>$10,000.00</td>
+                                  <td>$900</td>
+                                  <td>$900</td>
+                                  <td>$11,800.00</td>
+                              </tr>
+                              <tr>
+                                  <td>4. Full Stact Web Development</td>
+                                  <td> 
+                                      02
+                                  </td>
+                                  <td>10</td>
+                                  <td>9%</td>
+                                  <td>$10,000.00</td>
+                                  <td>$900</td>
+                                  <td>$900</td>
+                                  <td>$11,800.00</td>
+                              </tr>
+                          </tbody>
+              
+                      </table>
+                  </div>
+              
+              
+              </div>
+              <!--=========================================
+                                  Item table End
+              ==============================================-->
+              
+              
+              
+              
+              <div class="container-fluid p-4">
+                  <div class="row">
+                      <!--=========================================
+                                  Bank & payment table start
+              ==============================================-->
+                      <div class="col-sm-6 ">
+                          <h3  class="headingcolor">Bank & Private Details</h3>
+                          <div class="row">
+                              <div class="col-sm-12 col-md-9 w-100">
+                                  <table class="bank table table-sm w-100 ">
+                                      <tr >
+                                          <td class="text-secondary "> Account Holder Name </td>
+                                          <td>
+                                             Foobar labs 
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+              
+                                              Account Number
+                                          </td>
+                                          <td>
+                                              5647363467
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>IFSC</td> 
+                                          <td>
+                                              JDFNDJFNDFJ7
+                                          </td>
+              
+                                      </tr>
+                                      <tr>
+                                          <td>Account Type</td>
+                                          <td>Savings</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Bank</td>
+                                          <td>HDFC Banks</td>
+                                      </tr>
+                                      <tr>
+                                          <td>UPI</td>
+                                          <td>foobaries@gmail.com</td>
+                                      </tr>
+                                  </table>
+              
+                              </div>
+                              <div class="col-sm-4 col-md-3">
+                                  <p class="text-secondary">
+                                      <small> UPI-Scan to Pay </small>
+                                  </p>
+                                  <img src="https://i2.wp.com/digiday.com/wp-content/uploads/2012/07/QR_Code.png?resize=654%2C579&zoom=2&quality=100&strip=all&ssl=1" alt="" width="100px" height="100px" >
+                              </div>
+                          </div>
+                           <!--=========================================
+                                  Bank & payment table end
+              ==============================================-->
+                <!--=========================================
+                                  Terms and Conditions start
+              ==============================================-->
+                          <h3 class=" mt-4 headingcolor">Terms and Conditions</h3>
+                          <p class="text-secondary">
+                            
+                                  <span class="pr-1">1</span>
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum at temporibus excepturi corporis cumque.
+                                  
+                              
+                          </p>
+                          <p class="text-secondary mb-4">
+                            
+                              <span class="pr-1">2</span>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum at temporibus excepturi corporis cumque.
+                              
+                          
+                          </p>
+                <!--=========================================
+                                  Terms and Conditions End
+              ==============================================-->
+                <!--=========================================
+                                Additional Notes End
+              ==============================================-->
+              
+                      <h3 class="mt-4 headingcolor">Additional Notes</h3>
+                      <p class="text-secondary mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nisi, repudiandae, autem porro illo libero adipisci quibusdam quos inventore in vel debitis? Explicabo voluptatum rerum maiores iste voluptas autem soluta.</p>
+              
+                      <p class="mt-4">
+                          For Any enquiries, email us on
+                          <a href="#"><b class="text-dark">aaaaaa@gmail.com</b></a> or call us on <a href="#"><b class="text-dark">+000000000</b></a>
+                          
+              
+                      </p>
+                <!--=========================================
+                                  Additional Notes End
+              ==============================================-->
+                      </div>
+                     
+              
+              
+                      <div class="col-sm-6 p-4">
+                          <table class="table total" >
+                              <tr>
+                                  <td> Sub total</td>
+                                  <td class="float-right">$40,000</td>
+                              </tr>
+                              <tr class="text-success">
+                                  <td> Discount(10%)</td>
+                                  <td class="float-right">$40,000</td>
+                              </tr>
+                              <tr>
+                                  <td> Taxable Amount</td>
+                                  <td class="float-right">$40,000</td>
+                              </tr>
+                              <tr>
+                                  <td> CGST</td>
+                                  <td class="float-right">$40,000</td>
+                              </tr>
+                              <tr>
+                                  <td> SGST</td>
+                                  <td class="float-right">$40,000</td>
+                              </tr>
+                              <tr class="border_top">
+                              <td> <big> Total</big></td>
+                                  <td class="float-right font-weight-bold "><big> $40,000</big></td>
+                              </tr>
+                              <tr>
+                                  <td colspan="2">
+                                      <p class="text-secondary">Invoice Total (in Words)<small></small></p>
+                                      <p><b>Forty-Two Thousand Four Hundred Rupees Only</b></p>
+                                  </td>
+                              </tr>
+                              <tr class="border_top">
+                                  <td>
+                                      <p>
+                                          <span class="text-danger">EarlyPay Discount</span> <br>
+                                          <small class="text-secondary">if paid before Dec 19,2019 | 9:00PM </small>
+                                      </p>
+              
+                                  </td>
+                                  <td class="float-right text-danger">$40,000</td>
+                                 
+                              </tr>
+                              <tr>
+                                  <td> EarlyPay Amount</td>
+                                      <td class="float-right font-weight-bold ">$42280</td>
+                                  </tr>
+                          </table>
+              
+              
+                      </div>
+                  </div>
+              </div>
+                            </div>
+                            
+                          </div>
+                          
+        </div>
+    </div>    <!-- Main Content Area End -->
+                </div>
+              </div>
+            </div>
+      
+                  <script type="text/javascript">
+              var mainurl = "https://geniuscart.royalscripts.com";
+              var admin_loader = 1;
+              var whole_sell = 6;
+              var getattrUrl = 'https://geniuscart.royalscripts.com/admin/getattributes';
+              var curr = {"id":1,"name":"USD","sign":"$","value":"1","is_default":"1"};
+             
+            </script>
+      
+          <!-- Dashboard Core -->
+          <script src="../Dashboard/jquery-1.12.4.min.js.download"></script>
+          <script src="../Dashboard/vue.js.download"></script>
+          <script src="../Dashboard/bootstrap.min.js.download"></script>
+          <script src="../Dashboard/jqueryui.min.js.download"></script>
+          <!-- Fullside-menu Js-->
+          <script src="../Dashboard/jquery.slimscroll.min.js.download"></script>
+          <script src="../Dashboard/waves.min.js.download"></script>
+      
+          <script src="../Dashboard/plugin.js.download"></script>
+          <script src="../Dashboard/Chart.min.js.download"></script>
+          <script src="../Dashboard/tag-it.js.download"></script>
+          <script src="../Dashboard/nicEdit.js.download"></script>
+              <script src="../Dashboard/bootstrap-colorpicker.min.js.download"></script>
+              <script src="../Dashboard/notify.js.download"></script>
+      
+              <script src="../Dashboard/jquery.canvasjs.min.js.download"></script>
+      
+          <script src="../Dashboard/load.js.download"></script>
+          <!-- Custom Js-->
+          <script src="../Dashboard/custom.js.download"></script>
+          <!-- AJAX Js-->
+          <script src="../Dashboard/myscript.js.download"></script>
+      
+      
+      
+      
+ 
+
+
+
+
+  </div>
+    <!-- ========= Menu Toggle Script -->
+    <script>
+     function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
+</body>
+</html>
