@@ -36,19 +36,19 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> ×</a>
     <a class="navbar-brand font-weight-bold text-light " href="index.html">NavieaSoft</a>
     
-        <a class="nav-link active" href="#"><i class="fa fa-user" aria-hidden="true"></i>Sales Entry <span class="sr-only">(current)</span></a>
+        <a class="nav-link active" href="SalesEntry.html"><i class="fa fa-user" aria-hidden="true"></i>Sales Entry <span class="sr-only">(current)</span></a>
   
       
        
 
       
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="salesReturnEntry.html">
           <i class="fa fa-user" aria-hidden="true"></i>
           Sales Return Entry
         </a>
        
       
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="invoice.html">
           <i class="fa fa-user" aria-hidden="true"></i>
           Sales Invoice
         </a>
@@ -275,21 +275,113 @@
   
               
                     </div>
-                    <div class="col-md-12 col-lg-4 col-sm-12 my-4">
-                        <h5 class="text-center"> <em> Amount Details </em></h5>
-                        
-                        <form>
-                            <div class="form-row">
-                              <div class="col">
-                                <input type="text" class="form-control" placeholder="First name">
+                    <div class="col-md-12 col-lg-4 col-sm-12 my-4 ">
+                      <div class="amount">
+                          <h5 class="text-center"> <em> Amount Details </em></h5>
+                          
+                          <form>
+                              <div class="form-row">
+                                <div class="col">
+                                  <label for="">Subtotal</label>
+                                  <input type="number" class="form-control" placeholder="0">
+                                </div>
+                                <div class="col">
+                                  <label for="">Transport Cost</label>
+                                  <input type="number" class="form-control" placeholder="0">
+                                </div>
                               </div>
-                              <div class="col">
-                                <input type="text" class="form-control" placeholder="Last name">
+                              <div class="form-row">
+                                <div class="col">
+                                  <label for="">Vat(Tk)</label>
+                                  <input type="number" class="form-control" placeholder="0">
+                                </div>
+                                <div class="col">
+                                  <label for="">Vat(%)</label>
+                                  <input type="number" class="form-control" placeholder="0">
+                                </div>
                               </div>
-                            </div>
-                          </form>
+                              <div class="form-row">
+                                <div class="col">
+                                  <label for="">Discount(tk)</label>
+                                  <input type="number" class="form-control" placeholder="0">
+                                </div>
+                                <div class="col">
+                                  <label for="">Discount(%)</label>
+                                  <input type="number" class="form-control" placeholder="0">
+                                </div>
+                              </div>
+                              <div class="form-row">
+                                <div class="col">
+                                  <label for="">Total</label>
+                                  <input type="number" class="form-control" placeholder="0">
+                                </div>
+                              
+                              </div>
+                              <div class="form-row mt-4">
+                                <div class="col">
+                                  <button class="btn btn-sm btn-primary">
+                                    
+
+                                      <i class="fas fa-save"></i>
+                                      Quatation
+                                    </button>
+                                </div>
+                                <div class="col">
+                                  <button class="btn btn-sm btn-primary float-right">
+                                    <i class="fas fa-save"></i>
+                                    New Quatation
+                                  </button>
+                                </div>
+                              </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="container-fluid">
+              <div class="row row-card-one">
+                <div class="col-md-12 col-lg-8 col-sm-12">
+                  <h5 class="text-center"><em>Quotation Cart</em></h5>
+                  <table class="table table-sm report-table table-responsive-md my-4 table-striped">
+                    <thead>
+                      <tr>
+                        <th>SL</th>
+                        <th>Product</th>
+                        <th>Sale Rate</th>
+                        <th>Quantity</th>
+                        <th>Total Amount </th>
+                        <th>Remove</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>AAAAAAAAAA</td>
+                        <td>10000</td>
+                        <td>5</td>
+                        <td>10000</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>AAAAAAAAAA</td>
+                        <td>10000</td>
+                        <td>5</td>
+                        <td>10000</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>AAAAAAAAAA</td>
+                        <td>10000</td>
+                        <td>5</td>
+                        <td>10000</td>
+                        <td>2000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
 
 
