@@ -69,6 +69,7 @@
       
   </div>
   
+  
   <div id="main">
     <nav class="navbar navbar-expand-md   main-nav color" >
         <button class="openbtn" onclick="openNav()">☰ </button>  
@@ -148,7 +149,7 @@
                 <div class="row row-card-one">
                     <div class="col-sm-12 ">
                         <div class="row report-title  my-2">
-                            <h4 class="my-2 mx-auto "><em> <b>Sales Report</b> </em></h4>
+                            <h4 class="my-2 mx-auto "><em> <b>Sales Due Report</b> </em></h4>
                         </div>
                     </div>
                 </div>
@@ -163,36 +164,38 @@
                           <div class="col-sm-3">
                             <label for="">Search Type:</label> 
                             <select class="form-control form-control-sm">
-                                <option>All </option>
-                                <option>By Customer </option>
-                                <option>By Employee </option>
-                                <option>By Category </option>
-                                <option>By Product </option>
-                                <option>By User </option>
+                                <option>All Customer  </option>
+                                <option>Area Wise </option>
+                                <option>Customer Wise </option>
+                                <option>Retail Type Wise </option>
+                                <option>Wholesale Type Wise </option>
+                                
                                 
                               </select>
                           </div>
                           <div class="col-sm-3">
-                            <label for="">Record Type:</label> 
+                            <label for="">Area:</label> 
                             <select class="form-control form-control-sm">
-                                <option>With Details</option>
-                                <option>Without Details </option>
+                                <option>All</option>
+                                <option>Dhaka </option>
+                                <option>Chittagong </option>
                                 
                                 
                               </select>
                           </div>
-                          <div class="col-sm-2">
-                            <label for="birthdaytime">From Date:</label>
-                            <input type="date" class=" form-control form-control-sm" id="birthdaytime" name="time">
-                            
+                          <div class="col-sm-3">
+                            <label for="">Customer:</label> 
+                            <select class="form-control form-control-sm">
+                                <option>All</option>
+                                <option>AAAAAAA</option>
+                                <option>BBBBBBB </option>
+                                
+                                
+                              </select>
                           </div>
+                          
                           <div class="col-sm-2">
-                            <label for="">To Date:</label>
-                            <input type="date" class=" form-control form-control-sm" id="birthdaytime" name="time">
-                            
-                          </div>
-                          <div class="col-sm-2">
-                            <button  type="submit" class="btn btn-primary btn-block mt-4">Report</button>
+                            <button  type="submit" class="btn btn-primary btn-block mt-4">Search</button>
                             
                           </div>
                         </div>
@@ -208,14 +211,13 @@
                             <thead class="report-table-head">
                                 <tr>
                                     <th>SL</th>
-                                    <th>Invoice No</th>
-                                    <th>Date & Time</th>
-                                    <th>Customer</th>
-                                    <th>Product Name</th>
-                                    <th>Price</th>
-                                    <th>Quantity</th>
-                                    <th>Total</th>
-                                    <th>Actions</th>
+                                    <th>Customer Code</th>
+                                    <th>Customer Name</th>
+                                    <th>Institution</th>
+                                    <th>Address</th>
+                                    <th>Mobile No:</th>
+                                    <th>Due Amount</th>
+                                    
 
                                 </tr>
                                 
@@ -223,433 +225,105 @@
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>s-2021-18</td>
-                                    <td>09-Jun-2021 11:23AM</td>
-                                    <td>Yash Traders</td>
-                                    <td>Atop Rice</td>
-                                    <td>60</td>
-                                    <td>5</td>
-                                    <td>300.00</td>
-                                    <td>
-                                        <a href="#" data-toggle="modal" data-target="#myModal"> <i class="fas fa-file-invoice text-dark">
-                                            
-                                        </i></a>
-                                        <a href="#">
-                                            <i class="fas fa-edit text-success"></i>
-                                        </a>
-                                        <a href=""  data-toggle="modal" data-target="#exampleModal">
-                                            <i class="fas fa-trash-alt text-danger
-                                            "></i>
-                                        </a>
-                                        
-
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>
-                                        Total Quantity : 5.00
-                                    </td>
-                                    <td>
-                                        Total : 300.00 <br>
-                                        Paid : 0.00 <br>
-                                        Due : 300.00 
-                                    </td>
-                                    <td></td>
+                                    <td>0000000001</td>
+                                    <td>AAAAAAAAA</td>
+                                    <td>NavieaSoft</td>
+                                    <td>Dhaka</td>
+                                    <td>+9999999999999</td>
+                                    <td>400000$</td>
+                                    
                                 </tr>
                                 <tr>
                                     <td>1</td>
-                                    <td>s-2021-18</td>
-                                    <td>09-Jun-2021 11:23AM</td>
-                                    <td>Yash Traders</td>
-                                    <td>Atop Rice</td>
-                                    <td>60</td>
-                                    <td>5</td>
-                                    <td>300.00</td>
-                                    <td>
-                                        <a href="#" data-toggle="modal" data-target="#myModal"> <i class="fas fa-file-invoice text-dark">
-                                            
-                                        </i></a>
-                                        <a href="#">
-                                            <i class="fas fa-edit text-success"></i>
-                                        </a>
-                                        <a href=""  data-toggle="modal" data-target="#exampleModal">
-                                            <i class="fas fa-trash-alt text-danger
-                                            "></i>
-                                        </a>
-                                        
-                                        
-
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>
-                                        Total Quantity : 5.00
-                                    </td>
-                                    <td>
-                                        Total : 300.00 <br>
-                                        Paid : 0.00 <br>
-                                        Due : 300.00 
-                                    </td>
-                                    <td></td>
+                                    <td>0000000001</td>
+                                    <td>AAAAAAAAA</td>
+                                    <td>NavieaSoft</td>
+                                    <td>Dhaka</td>
+                                    <td>+9999999999999</td>
+                                    <td>400000$</td>
+                                    
                                 </tr>
                                 <tr>
                                     <td>1</td>
-                                    <td>s-2021-18</td>
-                                    <td>09-Jun-2021 11:23AM</td>
-                                    <td>Yash Traders</td>
-                                    <td>Atop Rice</td>
-                                    <td>60</td>
-                                    <td>5</td>
-                                    <td>300.00</td>
-                                    <td>
-                                        <a href="#" data-toggle="modal" data-target="#myModal"> <i class="fas fa-file-invoice text-dark">
-                                            
-                                        </i></a>
-                                        <a href="#">
-                                            <i class="fas fa-edit text-success"></i>
-                                        </a>
-                                        <a href=""  data-toggle="modal" data-target="#exampleModal">
-                                            <i class="fas fa-trash-alt text-danger
-                                            "></i>
-                                        </a>
-                                        
-                                        
-
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>
-                                        Total Quantity : 5.00
-                                    </td>
-                                    <td>
-                                        Total : 300.00 <br>
-                                        Paid : 0.00 <br>
-                                        Due : 300.00 
-                                    </td>
-                                    <td></td>
+                                    <td>0000000001</td>
+                                    <td>AAAAAAAAA</td>
+                                    <td>NavieaSoft</td>
+                                    <td>Dhaka</td>
+                                    <td>+9999999999999</td>
+                                    <td>400000$</td>
+                                    
                                 </tr>
                                 <tr>
                                     <td>1</td>
-                                    <td>s-2021-18</td>
-                                    <td>09-Jun-2021 11:23AM</td>
-                                    <td>Yash Traders</td>
-                                    <td>Atop Rice</td>
-                                    <td>60</td>
-                                    <td>5</td>
-                                    <td>300.00</td>
-                                    <td>
-                                        <a href="#" data-toggle="modal" data-target="#myModal"> <i class="fas fa-file-invoice text-dark">
-                                            
-                                        </i></a>
-                                        <a href="#">
-                                            <i class="fas fa-edit text-success"></i>
-                                        </a>
-                                        <a href=""  data-toggle="modal" data-target="#exampleModal">
-                                            <i class="fas fa-trash-alt text-danger
-                                            "></i>
-                                        </a>
-                                        
-                                        
-
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>
-                                        Total Quantity : 5.00
-                                    </td>
-                                    <td>
-                                        Total : 300.00 <br>
-                                        Paid : 0.00 <br>
-                                        Due : 300.00 
-                                    </td>
-                                    <td></td>
+                                    <td>0000000001</td>
+                                    <td>AAAAAAAAA</td>
+                                    <td>NavieaSoft</td>
+                                    <td>Dhaka</td>
+                                    <td>+9999999999999</td>
+                                    <td>400000$</td>
+                                    
                                 </tr>
                                 <tr>
                                     <td>1</td>
-                                    <td>s-2021-18</td>
-                                    <td>09-Jun-2021 11:23AM</td>
-                                    <td>Yash Traders</td>
-                                    <td>Atop Rice</td>
-                                    <td>60</td>
-                                    <td>5</td>
-                                    <td>300.00</td>
-                                    <td>
-                                        <a href="#" data-toggle="modal" data-target="#myModal"> <i class="fas fa-file-invoice text-dark">
-                                            
-                                        </i></a>
-                                        <a href="#">
-                                            <i class="fas fa-edit text-success"></i>
-                                        </a>
-                                        <a href=""  data-toggle="modal" data-target="#exampleModal">
-                                            <i class="fas fa-trash-alt text-danger
-                                            "></i>
-                                        </a>
-                                        
-                                        
-
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>
-                                        Total Quantity : 5.00
-                                    </td>
-                                    <td>
-                                        Total : 300.00 <br>
-                                        Paid : 0.00 <br>
-                                        Due : 300.00 
-                                    </td>
-                                    <td></td>
+                                    <td>0000000001</td>
+                                    <td>AAAAAAAAA</td>
+                                    <td>NavieaSoft</td>
+                                    <td>Dhaka</td>
+                                    <td>+9999999999999</td>
+                                    <td>400000$</td>
+                                    
                                 </tr>
                                 <tr>
                                     <td>1</td>
-                                    <td>s-2021-18</td>
-                                    <td>09-Jun-2021 11:23AM</td>
-                                    <td>Yash Traders</td>
-                                    <td>Atop Rice</td>
-                                    <td>60</td>
-                                    <td>5</td>
-                                    <td>300.00</td>
-                                    <td>
-                                        <a href="#" data-toggle="modal" data-target="#myModal"> <i class="fas fa-file-invoice text-dark">
-                                            
-                                        </i></a>
-                                        <a href="#">
-                                            <i class="fas fa-edit text-success"></i>
-                                        </a>
-                                        <a href=""  data-toggle="modal" data-target="#exampleModal">
-                                            <i class="fas fa-trash-alt text-danger
-                                            "></i>
-                                        </a>
-                                        
-                                        
-
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>
-                                        Total Quantity : 5.00
-                                    </td>
-                                    <td>
-                                        Total : 300.00 <br>
-                                        Paid : 0.00 <br>
-                                        Due : 300.00 
-                                    </td>
-                                    <td></td>
+                                    <td>0000000001</td>
+                                    <td>AAAAAAAAA</td>
+                                    <td>NavieaSoft</td>
+                                    <td>Dhaka</td>
+                                    <td>+9999999999999</td>
+                                    <td>400000$</td>
+                                    
                                 </tr>
                                 <tr>
                                     <td>1</td>
-                                    <td>s-2021-18</td>
-                                    <td>09-Jun-2021 11:23AM</td>
-                                    <td>Yash Traders</td>
-                                    <td>Atop Rice</td>
-                                    <td>60</td>
-                                    <td>5</td>
-                                    <td>300.00</td>
-                                    <td>
-                                        <a href="#" data-toggle="modal" data-target="#myModal"> <i class="fas fa-file-invoice text-dark">
-                                            
-                                        </i></a>
-                                        <a href="#">
-                                            <i class="fas fa-edit text-success"></i>
-                                        </a>
-                                        <a href=""  data-toggle="modal" data-target="#exampleModal">
-                                            <i class="fas fa-trash-alt text-danger
-                                            "></i>
-                                        </a>
-                                        
-                                        
-
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>
-                                        Total Quantity : 5.00
-                                    </td>
-                                    <td>
-                                        Total : 300.00 <br>
-                                        Paid : 0.00 <br>
-                                        Due : 300.00 
-                                    </td>
-                                    <td></td>
+                                    <td>0000000001</td>
+                                    <td>AAAAAAAAA</td>
+                                    <td>NavieaSoft</td>
+                                    <td>Dhaka</td>
+                                    <td>+9999999999999</td>
+                                    <td>400000$</td>
+                                    
                                 </tr>
                                 <tr>
                                     <td>1</td>
-                                    <td>s-2021-18</td>
-                                    <td>09-Jun-2021 11:23AM</td>
-                                    <td>Yash Traders</td>
-                                    <td>Atop Rice</td>
-                                    <td>60</td>
-                                    <td>5</td>
-                                    <td>300.00</td>
-                                    <td>
-                                        <a href="#" data-toggle="modal" data-target="#myModal"> <i class="fas fa-file-invoice text-dark">
-                                            
-                                        </i></a>
-                                        <a href="#">
-                                            <i class="fas fa-edit text-success"></i>
-                                        </a>
-                                        <a href=""  data-toggle="modal" data-target="#exampleModal">
-                                            <i class="fas fa-trash-alt text-danger
-                                            "></i>
-                                        </a>
-                                        
-                                        
-
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>
-                                        Total Quantity : 5.00
-                                    </td>
-                                    <td>
-                                        Total : 300.00 <br>
-                                        Paid : 0.00 <br>
-                                        Due : 300.00 
-                                    </td>
-                                    <td></td>
+                                    <td>0000000001</td>
+                                    <td>AAAAAAAAA</td>
+                                    <td>NavieaSoft</td>
+                                    <td>Dhaka</td>
+                                    <td>+9999999999999</td>
+                                    <td>400000$</td>
+                                    
                                 </tr>
                                 <tr>
                                     <td>1</td>
-                                    <td>s-2021-18</td>
-                                    <td>09-Jun-2021 11:23AM</td>
-                                    <td>Yash Traders</td>
-                                    <td>Atop Rice</td>
-                                    <td>60</td>
-                                    <td>5</td>
-                                    <td>300.00</td>
-                                    <td>
-                                        <a href="#" data-toggle="modal" data-target="#myModal"> <i class="fas fa-file-invoice text-dark">
-                                            
-                                        </i></a>
-                                        <a href="#">
-                                            <i class="fas fa-edit text-success"></i>
-                                        </a>
-                                        <a href=""  data-toggle="modal" data-target="#exampleModal">
-                                            <i class="fas fa-trash-alt text-danger
-                                            "></i>
-                                        </a>
-                                        
-                                        
-
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>
-                                        Total Quantity : 5.00
-                                    </td>
-                                    <td>
-                                        Total : 300.00 <br>
-                                        Paid : 0.00 <br>
-                                        Due : 300.00 
-                                    </td>
-                                    <td></td>
+                                    <td>0000000001</td>
+                                    <td>AAAAAAAAA</td>
+                                    <td>NavieaSoft</td>
+                                    <td>Dhaka</td>
+                                    <td>+9999999999999</td>
+                                    <td>400000$</td>
+                                    
                                 </tr>
                                 <tr>
                                     <td>1</td>
-                                    <td>s-2021-18</td>
-                                    <td>09-Jun-2021 11:23AM</td>
-                                    <td>Yash Traders</td>
-                                    <td>Atop Rice</td>
-                                    <td>60</td>
-                                    <td>5</td>
-                                    <td>300.00</td>
-                                    <td>
-                                        <a href="#" data-toggle="modal" data-target="#myModal"> <i class="fas fa-file-invoice text-dark">
-                                            
-                                        </i></a>
-                                        <a href="#">
-                                            <i class="fas fa-edit text-success"></i>
-                                        </a>
-                                        <a href=""  data-toggle="modal" data-target="#exampleModal">
-                                            <i class="fas fa-trash-alt text-danger
-                                            "></i>
-                                        </a>
-                                        
-                                        
-
-
-                                    </td>
+                                    <td>0000000001</td>
+                                    <td>AAAAAAAAA</td>
+                                    <td>NavieaSoft</td>
+                                    <td>Dhaka</td>
+                                    <td>+9999999999999</td>
+                                    <td>400000$</td>
+                                    
                                 </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>
-                                        Total Quantity : 5.00
-                                    </td>
-                                    <td>
-                                        Total : 300.00 <br>
-                                        Paid : 0.00 <br>
-                                        Due : 300.00 
-                                    </td>
-                                    <td></td>
-                                </tr>
+                                
                             </tbody>
 
                         </table>
