@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/dashboard/">
+
+   
+
+	
+
+		<!-- Main Css -->
+
+		<!-- stylesheet -->
+		
+		<link href="../Dashboard/style.css" rel="stylesheet">
+		<link href="../Dashboard/custom.css" rel="stylesheet">
+		<link href="../Dashboard/responsive.css" rel="stylesheet">
+		<link href="../Dashboard/common.css" rel="stylesheet">
+        <link rel="stylesheet" href="../invoice.css">
+
+		
+		
+
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> ×</a>
+    <a class="navbar-brand font-weight-bold text-light " href="../index.html">NavieaSoft</a>
+  
+      
+       
+
+      
+        <a class="nav-link" href="ProductTransferEntry.html">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          Product Transfer Entry
+        </a>
+       
+      
+        <a class="nav-link" href="ProductDamageEntry.html">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          Product Damage Entry
+        </a>
+        <a class="nav-link" href="ProductStock.html">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Product Stock
+          </a>
+          
+          <a class="nav-link" href="MaterialStock.html">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Material Stock
+          </a>
+          
+          <a class="nav-link" href="ProductLedger.html">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Product Ledger
+          </a>
+          <a class="nav-link" href="ProductTransferList.html">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Product Transfer List
+          </a>
+          
+          <a class="nav-link" href="ProductReceiveList.html">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Product Receive List
+          </a>
+          <a class="nav-link" href="ProductDamageList.html">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Product Damage List
+          </a>
+          <a class="nav-link" href="MaterialDamageList.html">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Material Damage List
+          </a>
+          <a class="nav-link" href="ProductPriceList.html">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Product Price List
+          </a>
+          <a class="nav-link" href="ProductRe-orderList.html">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Product Re-order List
+          </a>
+          <a class="nav-link" href="MaterialRe-orderList.html">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Material Re-order List
+          </a>
+          
+          
+          
+      
+        
+        
+        
+      
+        
+      
+        <a class="nav-link" href="#">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          User
+        </a>
+      
+  </div>
+  
+  
+  <div id="main">
+    <nav class="navbar navbar-expand-md   main-nav color" >
+        <button class="openbtn" onclick="openNav()">☰ </button>  
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav pl-4 mr-auto text-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                Dashboard <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                Administration</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../sales.html"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                  Sales </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Purchase.html"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                  Purchase </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                  Manufacturing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="inventory.html"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                  Inventory </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                  Curiier</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                  E-commerce </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                  Report</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                  Setting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                  Social setting</a>
+              </li>
+           
+          </ul>
+          <div class="user">
+              <div class="row"><div class="col-sm-7">
+                <p><b>User Name:</b> Aaaaaaaa</p>
+              </div>
+              <div class="col-sm-5">
+                <img src="https://geniuscart.royalscripts.com/assets/images/admins/1556780563user.png" alt="">
+              </div>
+
+              </div>
+              
+
+           
+          </div>
+          
+        </div>
+      </nav>
+
+
+        <div class="content-area">
+            <div class="container-fluid">
+                <div class="row row-card-one">
+                    <div class="col-sm-12 ">
+                        <div class="row report-title  my-2">
+                            <h4 class="my-2 mx-auto "><em> <b>Product Damage Entry </b> </em></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- <div class="container-fluid">
+                <div class="row row-card-one">
+                    <div class="col-sm-12">
+                    <form>
+                        <div class="form-row">
+                          <div class="col-sm-3">
+                            <label for="">Search Type:</label> 
+                            <select class="form-control form-control-sm">
+                                <option>All </option>
+                                <option>By Customer </option>
+                                <option>By Employee </option>
+                                <option>By Category </option>
+                                <option>By Product </option>
+                                <option>By User </option>
+                                
+                              </select>
+                          </div>
+                          <div class="col-sm-3">
+                            <label for="">Record Type:</label> 
+                            <select class="form-control form-control-sm">
+                                <option>With Details</option>
+                                <option>Without Details </option>
+                                
+                                
+                              </select>
+                          </div>
+                          <div class="col-sm-2">
+                            <label for="birthdaytime">From Date:</label>
+                            <input type="date" class=" form-control form-control-sm" id="birthdaytime" name="time">
+                            
+                          </div>
+                          <div class="col-sm-2">
+                            <label for="">To Date:</label>
+                            <input type="date" class=" form-control form-control-sm" id="birthdaytime" name="time">
+                            
+                          </div>
+                          <div class="col-sm-2">
+                            <button  type="submit" class="btn btn-primary btn-block mt-4">Report</button>
+                            
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                </div>
+            </div> -->
+        
+            <div class="container-fluid">
+                <div class="row row-card-one">
+                    <div class="col-sm-12">
+                    <form>
+                        <div class="form-row">
+                          <div class="col-sm-3">
+                            <label for=""> Product Damage Code</label> 
+                            <input type="text" class=" form-control form-control-sm" id="" name="">
+                          </div>
+                          <div class="col-sm-3">
+                            <label for="" >Damage Product</label> 
+                                <select class="form-control form-control-sm">
+                                    <option>AAAAAA</option>
+                                    <option>BBBBBB </option>
+                                    </select>
+                          </div>
+                          <div class="col-sm-3">
+                            <label for=""> Damage Rate</label> 
+                            <input type="text" class=" form-control form-control-sm" id="" placeholder="0" name="">
+    
+                          </div>
+                          
+                          <div class="col-sm-3">
+                            <label for="">Damage Quantity</label> 
+                            <input type="number" class=" form-control form-control-sm" placeholder="0" id="" name="">
+                          </div>
+                          <div class="col-sm-3">
+                            <label for=""> Damage Total</label> 
+                            <input type="text" class=" form-control form-control-sm" placeholder="0" id="" name="">
+                          </div>
+                          <div class="col-sm-3">
+                            <textarea name="" id="" class="form-control" placeholder="Damage Note.." cols="30" rows="2"></textarea>
+                          </div>
+                          <div class="col-sm-3">
+                            <label for=""> Damage Date</label> 
+                            <input type="date" class=" form-control form-control-sm" id="" name="">
+                          </div>
+                          <div class="col-sm-3">
+                                <button class="btn btn-sm btn-primary mt-4 ">
+                                    <i class="fa fa-save pr-2"></i>Save
+                                </button>
+                          </div>
+                          
+                          
+                          
+                        </div>
+                      </form>
+                    </div>
+                </div>
+            </div>
+
+
+          
+         
+          
+        <div class="container-fluid">
+            <div class="row row-card-one my-4">
+              <div class="col-md-12 col-lg-12 col-sm-12">
+                <h5 class="text-center"><em>Damage Product's List</em></h5>
+                <table class="table table-sm report-table table-responsive-md my-4 table-striped">
+                  <thead>
+                    <tr>
+                      
+                      <th>Damage Code</th>
+                      <th>Date</th>
+                      <th>Product Name</th>
+                      <th>Rate</th>
+                      <th>Quantity</th>
+                      <th>Total</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      
+                      <td>D00000121</td>
+                      <td>03 Jun 2021 01:34 pm</td>
+                      <td>Chops</td>
+                      <td>1.11</td>
+                      <td>20</td>
+                      <td>30.99</td>
+                      <td>
+                          <a href="#">
+                              <i class="fas fa-edit text-success"></i>
+                          </a>
+                          <a href=""  data-toggle="modal" data-target="#exampleModal">
+                              <i class="fas fa-trash-alt text-danger
+                              "></i>
+                          </a>
+  
+                      </td>
+                    </tr>
+                    <tr>
+                      
+                        <td>D00000121</td>
+                        <td>03 Jun 2021 01:34 pm</td>
+                        <td>Chops</td>
+                        <td>1.11</td>
+                        <td>20</td>
+                        <td>30.99</td>
+                        <td>
+                            <a href="#">
+                                <i class="fas fa-edit text-success"></i>
+                            </a>
+                            <a href=""  data-toggle="modal" data-target="#exampleModal">
+                                <i class="fas fa-trash-alt text-danger
+                                "></i>
+                            </a>
+    
+                        </td>
+                      </tr>
+                      <tr>
+                      
+                        <td>D00000121</td>
+                        <td>03 Jun 2021 01:34 pm</td>
+                        <td>Chops</td>
+                        <td>1.11</td>
+                        <td>20</td>
+                        <td>30.99</td>
+                        <td>
+                            <a href="#">
+                                <i class="fas fa-edit text-success"></i>
+                            </a>
+                            <a href=""  data-toggle="modal" data-target="#exampleModal">
+                                <i class="fas fa-trash-alt text-danger
+                                "></i>
+                            </a>
+    
+                        </td>
+                      </tr>
+                      <tr>
+                      
+                        <td>D00000121</td>
+                        <td>03 Jun 2021 01:34 pm</td>
+                        <td>Chops</td>
+                        <td>1.11</td>
+                        <td>20</td>
+                        <td>30.99</td>
+                        <td>
+                            <a href="#">
+                                <i class="fas fa-edit text-success"></i>
+                            </a>
+                            <a href=""  data-toggle="modal" data-target="#exampleModal">
+                                <i class="fas fa-trash-alt text-danger
+                                "></i>
+                            </a>
+    
+                        </td>
+                      </tr>
+                      <tr>
+                      
+                        <td>D00000121</td>
+                        <td>03 Jun 2021 01:34 pm</td>
+                        <td>Chops</td>
+                        <td>1.11</td>
+                        <td>20</td>
+                        <td>30.99</td>
+                        <td>
+                            <a href="#">
+                                <i class="fas fa-edit text-success"></i>
+                            </a>
+                            <a href=""  data-toggle="modal" data-target="#exampleModal">
+                                <i class="fas fa-trash-alt text-danger
+                                "></i>
+                            </a>
+    
+                        </td>
+                      </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+  
+      
+      
+      
+      
+      
+      
+
+      
+      
+      </div>
+      
+                <!-- Main Content Area End -->
+                </div>
+              </div>
+            </div>
+      
+                  <script type="text/javascript">
+              var mainurl = "https://geniuscart.royalscripts.com";
+              var admin_loader = 1;
+              var whole_sell = 6;
+              var getattrUrl = 'https://geniuscart.royalscripts.com/admin/getattributes';
+              var curr = {"id":1,"name":"USD","sign":"$","value":"1","is_default":"1"};
+             
+            </script>
+      
+          <!-- Dashboard Core -->
+          <script src="../Dashboard/jquery-1.12.4.min.js.download"></script>
+          <script src="../Dashboard/vue.js.download"></script>
+          <script src="../Dashboard/bootstrap.min.js.download"></script>
+          <script src="../Dashboard/jqueryui.min.js.download"></script>
+          <!-- Fullside-menu Js-->
+          <script src="../Dashboard/jquery.slimscroll.min.js.download"></script>
+          <script src="../Dashboard/waves.min.js.download"></script>
+      
+          <script src="../Dashboard/plugin.js.download"></script>
+          <script src="../Dashboard/Chart.min.js.download"></script>
+          <script src="../Dashboard/tag-it.js.download"></script>
+          <script src="../Dashboard/nicEdit.js.download"></script>
+              <script src="../Dashboard/bootstrap-colorpicker.min.js.download"></script>
+              <script src="../Dashboard/notify.js.download"></script>
+      
+              <script src="../Dashboard/jquery.canvasjs.min.js.download"></script>
+      
+          <script src="../Dashboard/load.js.download"></script>
+          <!-- Custom Js-->
+          <script src="../Dashboard/custom.js.download"></script>
+          <!-- AJAX Js-->
+          <script src="../Dashboard/myscript.js.download"></script>
+      
+      
+      
+      
+ 
+
+
+
+
+  </div>
+    <!-- ========= Menu Toggle Script -->
+    <script>
+     function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
+</body>
+</html>
