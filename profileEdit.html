@@ -4,219 +4,436 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Edit</title>
+    <title>DashBoard</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Sidebar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        .profile-pic img{
-            width: 130px;
-            padding: 3px;
-            border: 2px solid red;
-            border-image: linear-gradient(45deg, rgb(4, 9, 83), rgb(66, 182, 250)) 1;
-            
-        }
-        .edit-photo{
-            
-            font-size: 12px;
-            border-image: linear-gradient(45deg, rgb(4, 9, 83), rgb(66, 182, 250)) 1;
-            background-image:linear-gradient(45deg, rgb(4, 9, 83), rgb(66, 182, 250))  ;
-            color: white;
-        }
-        .edit-photo:hover{
-            background-image:linear-gradient(45deg,  rgb(66, 182, 250),rgb(4, 9, 83))  ;
-            border-image: linear-gradient(45deg,  rgb(66, 182, 250),rgb(4, 9, 83),) 1;
-        }
-        .save-changes{
-            margin:15px ;
-            padding: 5px 15px;
-            font-weight: bold;
-            color: white;
-            border-image: linear-gradient(45deg, rgb(4, 9, 83), rgb(66, 182, 250)) ;
-            background-image:linear-gradient(45deg, rgb(4, 9, 83), rgb(66, 182, 250));
-            transition: 0.5ms;
-            
-            
-        }
-        .save-changes:hover{
-            margin:15px ;
-            padding: 5px 15px;
-            letter-spacing: 1px;
-            font-weight: bold;
-            color: white;
-            background-image:linear-gradient(45deg,  rgb(66, 182, 250),rgb(4, 9, 83))  ;
-            border-image: linear-gradient(45deg,  rgb(66, 182, 250),rgb(4, 9, 83),) 1;
-            
-            
-        }
-        .profileEdit{
-            width: 90%;
-            margin: auto;
-            padding: 20px;
-            background-image:linear-gradient(45deg,  rgb(193, 228, 247),rgb(190, 193, 248))  ;
-            border-image: linear-gradient(45deg,  rgb(66, 182, 250),rgb(4, 9, 83),) 1;
-            border-radius: 15px;
-        }
-        .profileEdit label{
-            font-style: italic;
-            margin-top: 20px;
-            font-weight: bold;
 
-        }
-        @media screen and (max-width: 992px) {
-            .profileEdit{
-            width: 100%;
-            
-            padding: 5px;
-            
-        }
-}
-        
-    </style>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/dashboard/">
+
+   
+
+	
+
+		<!-- Main Css -->
+
+		<!-- stylesheet -->
+		
+		<link href="./Dashboard/style.css" rel="stylesheet">
+		<link href="./Dashboard/custom.css" rel="stylesheet">
+		<link href="./Dashboard/responsive.css" rel="stylesheet">
+		<link href="./Dashboard/common.css" rel="stylesheet">
+		
+	
 </head>
 <body>
+
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> ×</a>
+    <a class="navbar-brand font-weight-bold text-light " href="#">NavieaSoft</a>
     
-        <div class="container p-4">
-            <div class="profileEdit">
-            <div class="row"> 
-                <h1 class="mx-auto p-3 "><i><b>Edit Your Profile</b></i></h1>
-                <div>
-                <button class="float-right save-changes"> Save Changes <i class="fas fa-arrow-right"></i></button>
+        <a class="nav-link active" href="#"><i class="fa fa-user" aria-hidden="true"></i>Dashboard <span class="sr-only">(current)</span></a>
+  
+      
+        <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i>Administration</a>
+
+      
+        <a class="nav-link" href="sales.html">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          Sales modules
+        </a>
+        <a class="nav-link" href="Purchase/Purchase.html">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          Purchase modules
+        </a>
+      
+        <a class="nav-link" href="#">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          Manufacturing modules
+        </a>
+      
+        <a class="nav-link" href="Inventory/inventory.html">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          Inventory modules
+        </a>
+      
+        <a class="nav-link" href="Accounts/BankAccountsEntry.html">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          Accounts
+        </a>
+        <a class="nav-link" href="#">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          E-commerce modules
+        </a>
+      
+        <a class="nav-link" href="#">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          Reports module
+        </a>
+      
+        <a class="nav-link" href="#">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          Setting
+        </a>
+      
+        <a class="nav-link" href="#">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          Social Settings
+        </a>
+      
+        <a class="nav-link" href="#">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          User
+        </a>
+      
+  </div>
+  
+  
+  <div id="main">
+    <nav class="navbar navbar-expand-md   main-nav color" > 
+        <button class="openbtn" onclick="openNav()">☰ </button>  
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav pl-4 mr-auto text-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                Dashboard <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                Administration</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sales.html"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                  Sales </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Purchase/Purchase.html"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                  Purchase </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                  Manufacturing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Inventory/inventory.html"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                  Inventory </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Accounts/BankAccountsEntry.html"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                  Accounts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Hr&Payroll/Hr&PayRoll.html"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                  Hr&Payroll </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                  Report</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                  Setting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i> <br>
+                  Social setting</a>
+              </li>
+             
+           
+          </ul>
+
+          </div>
+        
+          <div class="user">
+              <div class="row">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">
+                    <img src="https://geniuscart.royalscripts.com/assets/images/admins/1556780563user.png" alt="">
+                    User Name</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="profile.html">Profile</a>
+                  <a href="profileEdit.html">Edit Profile</a>
+                  <hr>
+                  <a href="#">Log Out</a>
                 </div>
-                <div class="col-sm-12">
-                    <form action="">
-                        
-                        <div class="form-row">
-                            <div class="col-sm">
-                                <div class="profile-pic ">
-                                    <img class="mx-auto " src="https://media.istockphoto.com/photos/close-up-portrait-of-brunette-woman-picture-id1154642632?k=6&m=1154642632&s=612x612&w=0&h=YTiNxRGupHJpMqQRu7Xh-U976mur5fp-cM_WEczpx04=" alt="">
+              </div>
+              
+
+           
+          </div>
+          </div>
+          
+     
+      </nav> 
+
+
+        <div class="content-area">
+          <div class="row row-cards-one">
+            <div class="container p-4">
+                <div class="profileEdit">
+                <div class="row"> 
+                    <h1 class="mx-auto p-3 "><i><b>Edit Your Profile</b></i></h1>
+                    <div>
+                    <button class="float-right save-changes"> Save Changes <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                    <div class="col-sm-12">
+                        <form action="">
+                            
+                            <div class="form-row">
+                                <div class="col-sm">
+                                    <div class="profile-pic ">
+                                        <img class="mx-auto " src="https://media.istockphoto.com/photos/close-up-portrait-of-brunette-woman-picture-id1154642632?k=6&m=1154642632&s=612x612&w=0&h=YTiNxRGupHJpMqQRu7Xh-U976mur5fp-cM_WEczpx04=" alt="">
+                                        
+                                    </div>
+                                    <button class="edit-photo"><i class="fas fa-edit"></i>
+                                    </button>
+                                </div>
+                            </div>
+                           
+                            <div class="form-row">
+                                <div class="col-sm">
+                                    <label for="name">
+                                        Name:
+                                    </label>
+                                    <input type="text" class="  " placeholder="Type your name" required>
+                                </div>
+                                <div class="col-sm">
+                                    <label for="Email">
+                                        Email:
+                                    </label>
+                                    <input type="email" class="  " placeholder="Type a valid Email ID " required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-sm-3">
+                                    <label for="name">
+                                        Phone:
+                                    </label>
+                                    <input type="text" class="  " placeholder="Type your phone number" required>
+                                </div>
+                                <div class="col-sm-3">
+                                    <label for="name">
+                                        Address:
+                                    </label>
+                                    <input type="text" class="  " placeholder="Type your address" required>
+                                </div>
+                                <div class="col-sm-6">
+                                   <div class="row">
+                                       <div class="col-sm-8">
+                                        <label for="name">
+                                            Password:
+                                        </label>
+                                        <input type="password" class="  " placeholder="Type your password" required>
+                                       </div>
+                                       <div class="col-sm-4 mt-5">
+                                           <button class="btn btn-block edit-photo mt-2">Change Password</button>
+                                       </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-sm">
+                                    <label for="Nation">
+                                        Country Name:
+                                    </label>
+                                    <input type="text" class="  " placeholder="Type your Country Name" required>
+                                </div>
+                                <div class="col-sm">
+                                    <label for="Email">
+                                        Gender:
+                                    </label>
+                                    <select class="  " name="" id="">
+                                        <option value="">Male</option>
+                                        <option value="">Female</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm">
+                                    <label for="Email">
+                                        Language:
+                                    </label>
+                                    <select class="  " name="" id="">
+                                        <option value="">English</option>
+                                        <option value="">Bangla</option>
+                                    </select>
                                     
                                 </div>
-                                <button class="edit-photo"><i class="fas fa-edit"></i>
-                                </button>
                             </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-sm">
-                                <label for="name">
-                                    Name:
-                                </label>
-                                <input type="text" class="form-control" placeholder="Type your name" required>
-                            </div>
-                            <div class="col-sm">
-                                <label for="Email">
-                                    Email:
-                                </label>
-                                <input type="email" class="form-control" placeholder="Type a valid Email ID " required>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-sm-3">
-                                <label for="name">
-                                    Phone:
-                                </label>
-                                <input type="text" class="form-control" placeholder="Type your phone number" required>
-                            </div>
-                            <div class="col-sm-3">
-                                <label for="name">
-                                    Address:
-                                </label>
-                                <input type="text" class="form-control" placeholder="Type your address" required>
-                            </div>
-                            <div class="col-sm-6">
-                               <div class="row">
-                                   <div class="col-sm-8">
-                                    <label for="name">
-                                        Password:
+                            <div class="form-row">
+                                <div class="col-sm-3">
+                                    <label for="Nation">
+                                        Date of Birth:
                                     </label>
-                                    <input type="password" class="form-control" placeholder="Type your password" required>
-                                   </div>
-                                   <div class="col-sm-4 mt-5">
-                                       <button class="btn btn-block edit-photo mt-2">Change Password</button>
-                                   </div>
-                               </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-sm">
-                                <label for="Nation">
-                                    Country Name:
-                                </label>
-                                <input type="text" class="form-control" placeholder="Type your Country Name" required>
-                            </div>
-                            <div class="col-sm">
-                                <label for="Email">
-                                    Gender:
-                                </label>
-                                <select class="form-control" name="" id="">
-                                    <option value="">Male</option>
-                                    <option value="">Female</option>
-                                </select>
-                            </div>
-                            <div class="col-sm">
-                                <label for="Email">
-                                    Language:
-                                </label>
-                                <select class="form-control" name="" id="">
-                                    <option value="">English</option>
-                                    <option value="">Bangla</option>
-                                </select>
+                                    <input type="date" class="  " placeholder="Type your name" required>
+                                </div>
+                                <div class="col-sm-9">
+                                    <label for="">
+                                         Slogan:
+                                    </label>
+                                    <input type="text" class="  ">
+                                </div>
                                 
                             </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-sm-3">
-                                <label for="Nation">
-                                    Date of Birth:
-                                </label>
-                                <input type="date" class="form-control" placeholder="Type your name" required>
-                            </div>
-                            <div class="col-sm-9">
-                                <label for="">
-                                     Slogan:
-                                </label>
-                                <input type="text" class="form-control">
-                            </div>
-                            
-                        </div>
-                        <div class="form-row">
-                            <div class="col-sm-12">
-                                <label for="">
-                                    Payment Method:
-                                </label>
-                                <div class="row">
-                                <div class="col-sm-2">
-                                    <input type="checkbox" id="dewey" name="drone" value="dewey">
-                                    <label class="" for=""><img class="w-75" src="BKash-Logo.wine.svg" alt=""></label>
-                                  </div>
-                                  <div class="col-sm-2">
-                                    <input type="checkbox" id="dewey" name="drone" value="dewey">
-                                    <label class="" for=""><img class="w-75" src="1200px-MasterCard_Logo.svg.png" alt=""></label>
-                                  </div>
-                                  <div class="col-sm-2">
-                                    <input type="checkbox" id="dewey" name="drone" value="dewey">
-                                    <label class="" for=""><img class="w-75" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2560px-Visa_Inc._logo.svg.png" alt=""></label>
-                                  </div>
-                                  <div class="col-sm-2">
-                                    <input type="checkbox" id="dewey" name="drone" value="dewey">
-                                    <label class="" for=""><img class="w-75" src="https://download.logo.wine/logo/Nagad/Nagad-Logo.wine.png" alt=""></label>
-                                  </div>
-                                 
+                            <div class="form-row">
+                                <div class="col-sm-12">
+                                    <label for="">
+                                        Payment Method:
+                                    </label>
+                                    <div class="row">
+                                    <div class="col-sm-2">
+                                        <input type="checkbox" id=" " name="drone" value="">
+                                        <label class="form-control" for=""><img class="w-50" src="BKash-Logo.wine.svg" alt=""></label>
+                                      </div>
+                                      <div class="col-sm-2">
+                                        <input type="checkbox" id=" " name="drone" value=" ">
+                                        <label class="form-control" for=""><img class="w-50" src="1200px-MasterCard_Logo.svg.png" alt=""></label>
+                                      </div>
+                                      <div class="col-sm-2">
+                                        <input type="checkbox" id=" " name="drone" value=" ">
+                                        <label class=" form-control" for=""><img class="w-50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2560px-Visa_Inc._logo.svg.png" alt=""></label>
+                                      </div>
+                                      <div class="col-sm-2">
+                                        <input type="checkbox" id=" " name="drone" value=" ">
+                                        <label class="form-control" for=""><img class="w-50" src="https://download.logo.wine/logo/Nagad/Nagad-Logo.wine.png" alt=""></label>
+                                      </div>
+                                     
+                                    </div>
                                 </div>
+                                
+                                
                             </div>
-                            
-                            
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+      </div>
+      
+                <!-- Main Content Area End -->
+                </div>
+              </div>
+            </div>
+      
+                  <script type="text/javascript">
+              var mainurl = "https://geniuscart.royalscripts.com";
+              var admin_loader = 1;
+              var whole_sell = 6;
+              var getattrUrl = 'https://geniuscart.royalscripts.com/admin/getattributes';
+              var curr = {"id":1,"name":"USD","sign":"$","value":"1","is_default":"1"};
+              // console.log(curr);
+            </script>
+      
+          <!-- Dashboard Core -->
+          <script src="./Dashboard/jquery-1.12.4.min.js.download"></script>
+          <script src="./Dashboard/vue.js.download"></script>
+          <script src="./Dashboard/bootstrap.min.js.download"></script>
+          <script src="./Dashboard/jqueryui.min.js.download"></script>
+          <!-- Fullside-menu Js-->
+          <script src="./Dashboard/jquery.slimscroll.min.js.download"></script>
+          <script src="./Dashboard/waves.min.js.download"></script>
+      
+          <script src="./Dashboard/plugin.js.download"></script>
+          <script src="./Dashboard/Chart.min.js.download"></script>
+          <script src="./Dashboard/tag-it.js.download"></script>
+          <script src="./Dashboard/nicEdit.js.download"></script>
+              <script src="./Dashboard/bootstrap-colorpicker.min.js.download"></script>
+              <script src="./Dashboard/notify.js.download"></script>
+      
+              <script src="./Dashboard/jquery.canvasjs.min.js.download"></script>
+      
+          <script src="./Dashboard/load.js.download"></script>
+          <!-- Custom Js-->
+          <script src="./Dashboard/custom.js.download"></script>
+          <!-- AJAX Js-->
+          <script src="./Dashboard/myscript.js.download"></script>
+      
+      
+      
+          
+       
 
 
+
+
+  </div>
+    <!-- ========= Menu Toggle Script -->
+    <script>
+     function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+    </script>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
+
+
+
+
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+
+
+
+
+
+
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
