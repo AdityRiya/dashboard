@@ -33,59 +33,92 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> ×</a>
     <a class="navbar-brand font-weight-bold text-light " href="#">NavieaSoft</a>
     
-        <a class="nav-link active" href="#"><i class="fa fa-user" aria-hidden="true"></i>Dashboard <span class="sr-only">(current)</span></a>
-  
-      
-        <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i>Administration</a>
+    
+    <div class="sidenav">
+        
+        <a class="dropdown-btn">Page
+          <i class="fa fa-caret-down"></i>
+        </a>
+        <div class="dropdown-container">
+          <a href="#">Add Page</a>
+          <a href="#">Manage Page</a>
+          
+        </div>
+        <a class="dropdown-btn">Post
+            <i class="fa fa-caret-down"></i>
+          </a>
+          <div class="dropdown-container">
+            <a href="#">Add Post</a>
+            <a href="#">Manage Post</a>
+            
+          </div>
+          <a class="dropdown-btn">Product
+            <i class="fa fa-caret-down"></i>
+          </a>
+          <div class="dropdown-container">
+            <a href="#">Add Product</a>
+            <a href="#">Manage Product</a>
+            
+          </div>
+          <a class="dropdown-btn">Banner
+            <i class="fa fa-caret-down"></i>
+          </a>
+          <div class="dropdown-container">
+            <a href="#">Add Banner</a>
+            <a href="#">Manage Banner</a>
+            
+          </div>
+          <a class="dropdown-btn">Category
+            <i class="fa fa-caret-down"></i>
+          </a>
+          <div class="dropdown-container">
+            <a href="#">Add Category</a>
+            <a href="#">Manage Category</a>
+            
+          </div>
+          <a class="dropdown-btn">Brand
+            <i class="fa fa-caret-down"></i>
+          </a>
+          <div class="dropdown-container">
+            <a href="#">Add Brand</a>
+            <a href="#">Manage Brand</a>
+          </div>
+          <a class="dropdown-btn">Attribute
+            <i class="fa fa-caret-down "></i>
+          </a>
+          <div class="dropdown-container">
+            <a href="#">Add Attribute</a>
+            <a href="#">Manage Attribute</a>
+            
+          </div>
+          <a class="dropdown-btn">Option
+            <i class="fa fa-caret-down"></i>
+          </a>
+          <div class="dropdown-container">
+            <a href="#">Add Option</a>
+            <a href="#">Manage Option</a>
+            
+          </div>
+        
+      </div> 
+      <script>
+          var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
 
-      
-        <a class="nav-link" href="sales.html">
-          <i class="fa fa-user" aria-hidden="true"></i>
-          Sales modules
-        </a>
-        <a class="nav-link" href="Purchase/Purchase.html">
-          <i class="fa fa-user" aria-hidden="true"></i>
-          Purchase modules
-        </a>
-      
-        <a class="nav-link" href="#">
-          <i class="fa fa-user" aria-hidden="true"></i>
-          Manufacturing modules
-        </a>
-      
-        <a class="nav-link" href="Inventory/inventory.html">
-          <i class="fa fa-user" aria-hidden="true"></i>
-          Inventory modules
-        </a>
-      
-        <a class="nav-link" href="Accounts/BankAccountsEntry.html">
-          <i class="fa fa-user" aria-hidden="true"></i>
-          Accounts
-        </a>
-        <a class="nav-link" href="#">
-          <i class="fa fa-user" aria-hidden="true"></i>
-          E-commerce modules
-        </a>
-      
-        <a class="nav-link" href="#">
-          <i class="fa fa-user" aria-hidden="true"></i>
-          Reports module
-        </a>
-      
-        <a class="nav-link" href="#">
-          <i class="fa fa-user" aria-hidden="true"></i>
-          Setting
-        </a>
-      
-        <a class="nav-link" href="#">
-          <i class="fa fa-user" aria-hidden="true"></i>
-          Social Settings
-        </a>
-      
-        <a class="nav-link" href="#">
-          <i class="fa fa-user" aria-hidden="true"></i>
-          User
-        </a>
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+} 
+      </script>
+  
+  
       
   </div>
   
@@ -939,6 +972,7 @@
   </div>
     <!-- ========= Menu Toggle Script -->
     <script>
+        
      function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";

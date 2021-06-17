@@ -102,15 +102,18 @@ body {
 
   .sidebar {
     height: 100%;
-    width: 0;
+    width: 250px;
     position: fixed;
-    z-index: 1;
+    z-index: 100;
     top: 0;
     left: 0;
     background-image: linear-gradient(rgb(0, 35, 151),rgb(0,130,250));
     overflow-x: hidden;
     transition: .5s;
     padding-top: 20px;
+  }
+  #main{
+      margin-left: 250px;
   }
   .navbar-brand{
     font-size: 20px !important;
@@ -154,7 +157,7 @@ body {
   .openbtn {
     font-size: 20px;
     cursor: pointer;
-   background-image: linear-gradient(rgb(9, 28, 102), rgb(50,100,150),blue);
+    background-image: linear-gradient(rgb(9, 28, 102), rgb(50,100,150),blue);
     color: white;
     padding: 10px 15px;
     border: none;
@@ -403,3 +406,14 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+.dropdown-btn i{
+    float:right;
+}
